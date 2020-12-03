@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: rgb(200, 200, 201);
+    display: flex;
+}
+
+.logContainer{
+    background-color: beige;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    box-shadow: 0px 6px 17px 0px rgba(0,0,0,0.75);
+}
+
+.logContainer h1{
+    margin: 25px auto;
+    padding: 10px;
+    text-align: center;
+    color: rgb(17, 76, 238);
+}
+
+.logContainer input{
+    margin: auto;
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border: solid grey .1px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.logContainer button{
+    margin: 20px auto;
+    width: 60%;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(17, 76, 238);
+    border: none;
+    border-radius: 10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#boton_log:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(17, 76, 238);
+    border: 1px solid grey;
+}

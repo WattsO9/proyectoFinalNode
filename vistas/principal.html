@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Principal</title>
+    <link rel="stylesheet" type="text/css" href="../css/principal.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="../js/principal.js" defer></script>
+
+</head>
+<body>
+    <div id="cabecera">
+        <input type="text" id="barra_buscar">
+        <div id="resultados_busqueda"></div>
+    </div>
+    <div id="deseleccionar">
+        
+    </div>
+    <div id="left_menu">
+            <div class="opciones" id="opcion_agregar">
+                <p  class="texto_opciones">Agregar</p>
+            </div>
+            <div class="opciones" id="opcion_modificar">
+                <p class="texto_opciones">Modificar</p>
+            </div>
+            <div class="opciones" id="opcion_eliminar">
+                <p class="texto_opciones">Eliminar</p>
+            </div>
+            <div id="salir_sesion">
+                    <p class="texto_opciones">Salir</p>
+            </div>
+    </div>
+    <div id="Agregar">
+        <h1 id="titulo_a">Datos del empleado</h1>
+        <input type="text" autocomplete="off" placeholder="Nombre" class="datos" id="nombre">
+        <input type="text" placeholder="Apellidos" class="datos" id="apellidos">
+        <input type="text" placeholder="Teléfono" class="datos" id="telefono">
+        <input type="text" autocomplete="off" placeholder="Correo electrónico" class="datos" id="correo">
+        <input type="text" placeholder="Dirección" class="datos" id="direccion">
+        <input type="text" placeholder="Contraseña" class="datos" id="pass" readonly>
+        <button id="boton_agregar" class="boton_p">Agregar</button>
+    </div>
+    <div id="Modificar"> 
+        <h1 id="titulo_m">Modificar</h1>
+        <input id="mail_phone" type="text" class="datos" placeholder="Celular o correo del usuario para deplegar sus datos">
+        <button id="Desplegar">Desplegar</button>
+        <input type="text" class="datos_m" id="nombre_m">
+        <input type="text" class="datos_m" id="apellidos_m">
+        <input type="text" class="datos_m" id="telefono_m">
+        <input type="text" class="datos_m" id="correo_m">
+        <input type="text" class="datos_m" id="direccion_m">
+        <input type="text" class="datos_m" id="pass_m" readonly>
+        <button id="Modificar_b">Modificar</button>
+    </div>
+    <div id="Eliminar">
+        <h1 id="titulo_e">Eliminar empleado</h1>
+        <input id="opciones_e" type="text" class="datos" placeholder="Celular o correo del empleado a eliminar">
+        <button id="desplegar_e">Desplegar</button>
+        <input type="text" class="datos_e" id="nombre_e" readonly>
+        <input type="text" class="datos_e" id="apellidos_e" readonly>
+        <input type="text" class="datos_e" id="telefono_e" readonly>
+        <input type="text" class="datos_e" id="correo_e" readonly>
+        <input type="text" class="datos_e" id="direccion_e" readonly>
+        <input type="text" class="datos_e" id="pass_e" readonly>
+        <button id="Eliminar_b">Eliminar</button>
+    </div>
+</body>
+</html>
